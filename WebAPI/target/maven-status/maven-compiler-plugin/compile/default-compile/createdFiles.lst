@@ -1,0 +1,6 @@
+com/webapi/testng/IgnoreTest.class
+com/webapi/testng/suite/LoginTest.class
+com/webapi/testng/groups/GroupsOnMethod.class
+com/webapi/testng/suite/SuiteConfig.class
+com/webapi/testng/suite/PayTest.class
+com/webapi/testng/BasicAnnotation.class
