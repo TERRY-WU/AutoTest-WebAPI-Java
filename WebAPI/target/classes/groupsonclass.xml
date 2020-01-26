@@ -3,13 +3,13 @@
 
 <suite name="test">
 
-    <!--    <test name="runAll">-->
-    <!--        <classes>-->
-    <!--            <class name="com.webapi.testng.groups.GroupsOnClass1"/>-->
-    <!--            <class name="com.webapi.testng.groups.GroupsOnClass2"/>-->
-    <!--            <class name="com.webapi.testng.groups.GroupsOnClass3"/>-->
-    <!--        </classes>-->
-    <!--    </test>-->
+    <test name="runAll">
+        <classes>
+            <class name="com.webapi.testng.groups.GroupsOnClass1"/>
+            <class name="com.webapi.testng.groups.GroupsOnClass2"/>
+            <class name="com.webapi.testng.groups.GroupsOnClass3"/>
+        </classes>
+    </test>
     <test name="runStudent">
         <groups>
             <run>
@@ -20,28 +20,6 @@
             <class name="com.webapi.testng.groups.GroupsOnClass1"/>
             <class name="com.webapi.testng.groups.GroupsOnClass2"/>
             <class name="com.webapi.testng.groups.GroupsOnClass3"/>
-        </classes>
-    </test>
-
-    <test name="runServerGroup">
-        <groups>
-            <run>
-                <include name="server"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.webapi.testng.groups.GroupsOnMethod"/>
-        </classes>
-    </test>
-
-    <test name="runClientGroup">
-        <groups>
-            <run>
-                <include name="client"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.webapi.testng.groups.GroupsOnMethod"/>
         </classes>
     </test>
 
