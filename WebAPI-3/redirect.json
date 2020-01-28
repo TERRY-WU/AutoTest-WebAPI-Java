@@ -1,0 +1,26 @@
+[
+  {
+    "description": "This is a redirect demo...",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+
+  {
+    "request": {
+      "uri": "/redirect/topath"
+    },
+    "redirectTo": "/redirect/new"
+  },
+
+  {
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "text": "Redirect success.....!"
+    }
+  }
+
+]

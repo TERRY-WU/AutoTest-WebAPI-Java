@@ -1,0 +1,38 @@
+[
+  {
+    "description": "This is a get request with cookies",
+    "request": {
+      "uri": "/get/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "This is a get request with cookies...!"
+    }
+  },
+
+  {
+    "description": "This is a post request with cookies",
+    "request": {
+      "uri": "/post/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "gaga",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "returned_status": "success",
+        "status_code": 10000
+      }
+    }
+  }
+
+]

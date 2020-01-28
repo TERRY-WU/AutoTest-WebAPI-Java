@@ -1,0 +1,28 @@
+[
+  {
+    "description": "This method is to simulate a get method without params",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "This is a get method without parameters...!"
+    }
+  },
+  {
+    "description": "This method is a get method with params",
+    "request": {
+      "uri": "/getwithparams",
+      "method": "get",
+      "queries": {
+        "name": "大牛B",
+        "age": "68"
+      }
+    },
+    "response": {
+      "text": "I'm a big big cow 🐮"
+    }
+  }
+
+]
+
