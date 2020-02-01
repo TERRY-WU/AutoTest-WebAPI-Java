@@ -1,4 +1,4 @@
-package com.api.httpclient.demo;
+package com.course.httpclient.demo;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -11,14 +11,18 @@ import java.io.IOException;
 
 public class MyHttpClient {
 
+
     @Test
-    public void test01() throws IOException {
-        String res;
+    public void test1() throws IOException {
+
+        //用来存放我们的结果
+        String result;
         HttpGet get = new HttpGet("http://www.baidu.com");
+        //这个是用来执行get方法的
         HttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
-        res = EntityUtils.toString(response.getEntity(), "utf-8");
-        System.out.println(res);
+        result = EntityUtils.toString(response.getEntity(),"utf-8");
+        System.out.println(result);
     }
 
 }

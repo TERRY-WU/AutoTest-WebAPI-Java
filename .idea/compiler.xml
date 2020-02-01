@@ -6,18 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="WebAPI-5" />
         <module name="WebAPI-4" />
         <module name="WebAPI-2" />
         <module name="WebAPI-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AutoTest" target="1.5" />
-      <module name="WebAPI" target="1.5" />
+      <module name="AutoTest" target="1.8" />
       <module name="WebAPI-1" target="1.5" />
-      <module name="WebAPI-2" target="1.5" />
-      <module name="WebAPI-3" target="1.5" />
+      <module name="WebAPI-2" target="1.8" />
       <module name="WebAPI-4" target="1.5" />
+      <module name="WebAPI-5" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="WebAPI-2" options="-parameters" />
+      <module name="WebAPI-4" options="-parameters" />
+      <module name="WebAPI-5" options="-parameters" />
+    </option>
   </component>
 </project>

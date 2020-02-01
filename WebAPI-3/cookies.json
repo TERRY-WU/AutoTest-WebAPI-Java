@@ -1,5 +1,19 @@
 [
   {
+    "description": "This is a get request with cookies...!",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "恭喜你成功获得cookies信息...!"
+    }
+  },
+
+  {
     "description": "This is a get request with cookies",
     "request": {
       "uri": "/get/cookies",
@@ -30,7 +44,7 @@
       "status": 200,
       "json": {
         "returned_status": "success",
-        "status_code": 10000
+        "status_code": "10000"
       }
     }
   }
