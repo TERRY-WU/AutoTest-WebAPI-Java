@@ -1,11 +1,9 @@
 package com.api.server;
 
+import com.api.bean.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -38,8 +36,8 @@ public class PostMethod {
     @ApiOperation(value = "要求客户端携带cookies访问", httpMethod = "POST")
     public String getWithCookies(HttpServletRequest request) {
         Cookie[] cookies = request.getCookies();
-        for(Cookie cookie : cookies){
-            System.out.println(cookie.getName()+"---"+cookie.getValue());
+        for (Cookie cookie : cookies) {
+            System.out.println(cookie.getName() + "---" + cookie.getValue());
         }
         if (Objects.isNull(cookies)) {
             return "Error: cookies null...You must take cookies to access this page...!";
@@ -50,6 +48,26 @@ public class PostMethod {
             }
         }
         return "Sorry, you access this page without cookies...!";
+    }
+
+    @RequestMapping(value = "/getUserInfo", method = RequestMethod.POST)
+    @ApiOperation(value = "登陆成功后获取用户信息", httpMethod = "POST")
+    public String getUserInfo(HttpServletRequest request, @RequestBody User u) {
+        User user;
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equals("login")
+                    && cookie.getValue().equals("true")
+                    && u.getUserName().equals("admin")
+                    && u.getPassword().equals("123456")) {
+                 user = new User();
+                user.setName("lisi");
+                user.setAge("18");
+                user.setSex("男");
+                return user.toString();
+            }
+        }
+        return "参数不合法...!";
     }
 
 }

@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
-@EnableAutoConfiguration
+//@Controller
+//@EnableAutoConfiguration
 public class SampleController {
 
     @RequestMapping("/")
@@ -16,6 +16,6 @@ public class SampleController {
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(SampleController.class, args);
+//        SpringApplication.run(SampleController.class, args);
     }
 }

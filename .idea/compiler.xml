@@ -16,7 +16,7 @@
       <module name="AutoTest" target="1.8" />
       <module name="WebAPI-1" target="1.5" />
       <module name="WebAPI-2" target="1.8" />
-      <module name="WebAPI-4" target="1.5" />
+      <module name="WebAPI-4" target="1.8" />
       <module name="WebAPI-5" target="1.8" />
     </bytecodeTargetLevel>
   </component>
