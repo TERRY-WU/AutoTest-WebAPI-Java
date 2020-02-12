@@ -1,0 +1,24 @@
+server:
+  port: 8090
+
+logging:
+  file:
+    name: logs
+    path: mylog.log
+
+spring:
+  application:
+    name: report
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://207.246.114.168:8090/mybatis
+#    url: jdbc:mysql://207.246.114.168:8090/mybatis??useUnicode=true&amp;characterEncoding=UTF-8
+#    url: jdbc:mysql://192.168.88.11:3306/mybatis
+    username: root
+    password: Hard2guess*
+
+mybatis:
+#  type-aliases-package:  相当于java ben用来做映射
+  type-aliases-package: com.api.model
+  mapper-locations:
+    - mapper/*

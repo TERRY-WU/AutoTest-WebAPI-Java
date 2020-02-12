@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Objects;
 
 @RestController
-@Api(value = "/",tags = "这是我全部的get方法")
+@Api(value = "/api/v1",tags = "My Get Request")
 @RequestMapping("/api/v1")
 public class GetMethod {
 
@@ -20,26 +20,19 @@ public class GetMethod {
     @ApiOperation(value = "通过这个方法可以获取到Cookies", httpMethod = "GET")
     public String getCookies(HttpServletResponse response) {
         Cookie cookie = new Cookie("login", "true");
+        Cookie cookie1 = new Cookie("bt", "age");
+        Cookie cookie2 = new Cookie("hello", "aloha");
         response.addCookie(cookie);
+        response.addCookie(cookie1);
+        response.addCookie(cookie2);
         return "Congratulations~! You've got the cookie info.......!";
     }
 
     @RequestMapping(value = "/get/with/cookies", method = RequestMethod.GET)
     @ApiOperation(value = "要求客户端携带cookies访问", httpMethod = "GET")
     public String getWithCookies(HttpServletRequest request) {
-        Cookie[] cookies = request.getCookies();
-        for(Cookie cookie : cookies){
-            System.out.println(cookie.getName()+"---"+cookie.getValue());
-        }
-        if (Objects.isNull(cookies)) {
-            return "Error: cookies null...You must take cookies to access this page...!";
-        }
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("login") && cookie.getValue().equals("true")) {
-                return "Congratulations...you access this page with cookies";
-            }
-        }
-        return "Sorry, you access this page without cookies...!";
+        String resString = determineCookies(request);
+        return resString;
     }
 
     @RequestMapping(value = "/get/with/param", method = RequestMethod.GET)
@@ -61,4 +54,21 @@ public class GetMethod {
         mapList.put("珠江纯生", 9);
         return mapList;
     }
+
+    public static String determineCookies(HttpServletRequest request){
+        Cookie[] cookies = request.getCookies();
+        for(Cookie cookie : cookies){
+            System.out.println(cookie.getName()+"---"+cookie.getValue());
+        }
+        if (Objects.isNull(cookies)) {
+            return "Error: cookies null...You must take cookies to access this page...!";
+        }
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equals("login") && cookie.getValue().equals("true")) {
+                return "Congratulations...you access this page with cookies";
+            }
+        }
+        return "Sorry, you access this page without cookies...!";
+    }
+
 }

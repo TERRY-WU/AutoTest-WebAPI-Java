@@ -45,7 +45,7 @@ public class CookiesGet {
 
         List<Cookie> cookieList = store.getCookies();
         for (Cookie cookie : cookieList) {
-            System.out.print(cookie.getName());
+            System.out.println(cookie.getName());
             System.out.println(cookie.getValue());
         }
         res = EntityUtils.toString(response.getEntity(), "utf-8");

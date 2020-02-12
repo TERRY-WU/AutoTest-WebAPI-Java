@@ -20,6 +20,9 @@
         <module>WebAPI-3</module>
         <module>WebAPI-4</module>
         <module>WebAPI-5</module>
+        <module>WebAPI-6</module>
+        <module>WebAPI-7</module>
+        <module>AT-API</module>
     </modules>
 
 </project>

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
 
 @RestController
-@Api(value = "/", tags = "这是我全部的post请求")
+@Api(value = "/api/v1", tags = "My POST Request")
 @RequestMapping("/api/v1")
 public class PostMethod {
 
@@ -35,19 +35,7 @@ public class PostMethod {
     @RequestMapping(value = "/post/with/cookies", method = RequestMethod.POST)
     @ApiOperation(value = "要求客户端携带cookies访问", httpMethod = "POST")
     public String getWithCookies(HttpServletRequest request) {
-        Cookie[] cookies = request.getCookies();
-        for (Cookie cookie : cookies) {
-            System.out.println(cookie.getName() + "---" + cookie.getValue());
-        }
-        if (Objects.isNull(cookies)) {
-            return "Error: cookies null...You must take cookies to access this page...!";
-        }
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("login") && cookie.getValue().equals("true")) {
-                return "Congratulations...you access this page with cookies";
-            }
-        }
-        return "Sorry, you access this page without cookies...!";
+        return GetMethod.determineCookies(request);
     }
 
     @RequestMapping(value = "/getUserInfo", method = RequestMethod.POST)

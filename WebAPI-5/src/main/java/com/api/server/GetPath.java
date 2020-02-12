@@ -1,6 +1,7 @@
 package com.api.server;
 
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.testng.annotations.Test;
@@ -12,10 +13,22 @@ public class GetPath {
 
     @Test
     public void path() throws IOException {
-        File directory = new File("");//参数为空
-        String courseFile = directory.getCanonicalPath() ;
-        System.out.println(courseFile);
 
+        File file = new File("src");
+        String path = file.getAbsolutePath();
+        System.out.println(path);
+
+        File file1 = new File(path + "/main/jsonFiles");
+        File[] fileArr = file1.listFiles();
+        for (File f : fileArr) {
+            System.out.println(f);
+        }
+
+        File file2 = new File(path + "/main/jsonFiles");
+        String[] filelist = file2.list();
+        for(String f2 : filelist){
+            System.out.println(f2.substring(0, f2.lastIndexOf(".")));
+        }
     }
 
     /*

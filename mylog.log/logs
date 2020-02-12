@@ -1,0 +1,32 @@
+2020-02-07 02:19:20.832 [main] WARN  org.springframework.boot.StartupInfoLogger - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-02-07 02:19:25.842 [main] INFO  com.api.Application - Starting Application on Terrys-MacBook-Pro.local with PID 832 (/Users/terry/Desktop/AutoTest/WebAPI-6/target/classes started by terry in /Users/terry/Desktop/AutoTest)
+2020-02-07 02:19:25.844 [main] INFO  com.api.Application - No active profile set, falling back to default profiles: default
+2020-02-07 02:19:26.406 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.api]' package. Please check your configuration.
+2020-02-07 02:19:26.748 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-02-07 02:19:26.755 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-07 02:19:26.755 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-07 02:19:26.814 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-07 02:19:26.814 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 927 ms
+2020-02-07 02:19:27.233 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-07 02:19:27.469 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-02-07 02:19:27.533 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-07 02:19:27.539 [main] INFO  o.s.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-07 02:19:27.544 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+2020-02-07 02:19:27.546 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-02-07 02:19:27.546 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-07 02:19:27.547 [main] WARN  org.springframework.context.annotation.CommonAnnotationBeanPostProcessor - Destroy method on bean with name 'application' threw an exception: java.lang.NullPointerException
