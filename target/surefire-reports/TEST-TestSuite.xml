@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="13.299" tests="9" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/terry/Desktop/AT-API/target/test-classes:/Users/terry/Desktop/AT-API/target/classes:/Users/terry/.m2/repository/org/json/json/20170516/json-20170516.jar:/Users/terry/.m2/repository/org/mybatis/mybatis/3.5.3/mybatis-3.5.3.jar:/Users/terry/.m2/repository/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar:/Users/terry/.m2/repository/com/relevantcodes/extentreports/2.41.1/extentreports-2.41.1.jar:/Users/terry/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/terry/.m2/repository/org/xerial/sqlite-jdbc/3.28.0/sqlite-jdbc-3.28.0.jar:/Users/terry/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/terry/.m2/repository/org/mongodb/mongodb-driver/3.11.2/mongodb-driver-3.11.2.jar:/Users/terry/.m2/repository/org/mongodb/bson/3.11.2/bson-3.11.2.jar:/Users/terry/.m2/repository/org/mongodb/mongodb-driver-core/3.11.2/mongodb-driver-core-3.11.2.jar:/Users/terry/.m2/repository/com/vimalselvam/testng-extentsreport/1.3.1/testng-extentsreport-1.3.1.jar:/Users/terry/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/Users/terry/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar:/Users/terry/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/terry/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/terry/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/terry/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/terry/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/terry/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar:/Users/terry/.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar:/Users/terry/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/terry/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/terry/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/terry/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/terry/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/terry/Desktop/AT-API/target/surefire/surefirebooter80751612386589469.jar /Users/terry/Desktop/AT-API/target/surefire 2020-03-04T17-02-09_948-jvmRun1 surefire5991813989754642431tmp surefire_03015659600517858826tmp"/>
+    <property name="surefire.test.class.path" value="/Users/terry/Desktop/AT-API/target/test-classes:/Users/terry/Desktop/AT-API/target/classes:/Users/terry/.m2/repository/org/json/json/20170516/json-20170516.jar:/Users/terry/.m2/repository/org/mybatis/mybatis/3.5.3/mybatis-3.5.3.jar:/Users/terry/.m2/repository/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar:/Users/terry/.m2/repository/com/relevantcodes/extentreports/2.41.1/extentreports-2.41.1.jar:/Users/terry/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/terry/.m2/repository/org/xerial/sqlite-jdbc/3.28.0/sqlite-jdbc-3.28.0.jar:/Users/terry/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/terry/.m2/repository/org/mongodb/mongodb-driver/3.11.2/mongodb-driver-3.11.2.jar:/Users/terry/.m2/repository/org/mongodb/bson/3.11.2/bson-3.11.2.jar:/Users/terry/.m2/repository/org/mongodb/mongodb-driver-core/3.11.2/mongodb-driver-core-3.11.2.jar:/Users/terry/.m2/repository/com/vimalselvam/testng-extentsreport/1.3.1/testng-extentsreport-1.3.1.jar:/Users/terry/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/Users/terry/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar:/Users/terry/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/terry/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/terry/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/terry/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/terry/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/terry/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar:/Users/terry/.m2/repository/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar:/Users/terry/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/terry/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/terry/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/terry/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/terry/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/terry"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/terry/Desktop/AT-API"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/terry/Desktop/AT-API/target/surefire/surefirebooter80751612386589469.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="user.name" value="terry"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/terry/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/yh/trw_rwl95fg7l65w7_j5wrhm0000gn/T/"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="user.dir" value="/Users/terry/Desktop/AT-API"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/terry/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.ext.dirs" value="/Users/terry/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="test01" classname="com.api.cases.Login" time="1.197"/>
+  <testcase name="test02" classname="com.api.cases.Login" time="0.188"/>
+  <testcase name="test03" classname="com.api.cases.Login" time="0.166"/>
+  <testcase name="test04" classname="com.api.cases.Login" time="0.173"/>
+  <testcase name="test05" classname="com.api.cases.Login" time="0.133"/>
+  <testcase name="test06" classname="com.api.cases.Login" time="0.181"/>
+  <testcase name="test07" classname="com.api.cases.Login" time="0.208"/>
+  <testcase name="test08" classname="com.api.cases.Login" time="0.191"/>
+  <testcase name="test09" classname="com.api.cases.Login" time="0.095">
+    <failure message="expected [200] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [400]
+	at com.api.cases.Login.run(Login.java:96)
+	at com.api.cases.Login.test09(Login.java:81)
+</failure>
+    <system-err><![CDATA[Wed Mar 04 17:02:18 CST 2020 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+]]></system-err>
+  </testcase>
+</testsuite>
