@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.299 s <<< FAILURE! - in TestSuite
-test09(com.api.cases.Login)  Time elapsed: 0.095 s  <<< FAILURE!
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.171 s <<< FAILURE! - in TestSuite
+test09(com.api.cases.Login)  Time elapsed: 0.092 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [400]
 	at com.api.cases.Login.run(Login.java:96)
 	at com.api.cases.Login.test09(Login.java:81)
